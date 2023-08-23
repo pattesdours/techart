@@ -236,6 +236,9 @@ function buttonColorText(parentObj, buttonText, staticColor, hoverColor) {
 			btn.addEventListener("mouseout", function() {
 				updateTextButtonOnHover(this, buttonText, staticColor, "#FFFFFF");
 			});
+			btn.addEventListener("mousedown", function() {
+				updateTextButtonOnHover(this, buttonText, "#FFFFFF", "#000000");
+			});
 		} catch (err) {
 			// fail silently
 		}
